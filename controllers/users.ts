@@ -4,7 +4,7 @@ import { Request,  Response } from "express";
 export const postUser = ( req: Request, res: Response ) => {
    try {
       const data = req.body
-
+   
       return res.json({ msg: "post user", ...data })
    } catch (error) {
       console.log( error );
